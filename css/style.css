@@ -330,6 +330,7 @@ h3 {
 
 .appointment-form input:focus {
   border: 2px solid #663d15;
+  outline-color: #663d15;
 }
 
 .appointment-form input:nth-child(2n) {
@@ -546,6 +547,10 @@ h3 {
   line-height: 18px;
 }
 
+.catalog-filters input + label:hover {
+  color: #663d15;
+}
+
 .catalog-filters input + label::before {
   content: "";
   position: absolute;
@@ -613,6 +618,9 @@ h3 {
   margin-right:0;
 }
 
+.catalog-item:hover {
+  box-shadow: 0 0 15px 0 rgba(0,1,1,0.3);
+}
 .catalog-item a {
   display: block;
   margin-left: 16px;
