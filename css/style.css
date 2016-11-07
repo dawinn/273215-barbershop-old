@@ -724,6 +724,14 @@ h3 {
   width: 460px;
 }
 
+.gallery-photo {
+  width: 460px;
+  height: 498px;
+
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px 0 rgba(0,1,1,0.2);
+}
+
 .gallery-toggles{
   margin: 0;
   padding: 0;
@@ -732,9 +740,93 @@ h3 {
 
 .gallery-toggles li{
   display: inline-block;
+  vertical-align: bottom;
+  width: 138px;
+  height: 150px;
+  margin-right: 20px;
+
+  font-size: 0;
+
+  box-shadow: 0 0 15px 0 rgba(0,1,1,0.2);
 }
 
+.gallery-toggles li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery-toggles li:hover {
+  box-shadow: 0 0 15px 0 rgba(0,1,1,0.3);
+}
+.description-main {
+  margin-bottom: 60px;
+}
 .item-description {
   float: right;
-  width: 460px;
+  max-width: 390px;
+  margin-left: 90px;
+}
+
+.available-mark {
+  float: left;
+  margin-bottom: 35px;
+}
+
+.item-article {
+  float: right;
+  margin-bottom: 35px;
+  color: #aba9a7;
+}
+.description-text {
+  float: left;
+  margin-bottom: 40px;
+}
+
+.description-main .item-price {
+  float:left;
+  width: 65px;
+  padding: 10px 25px;
+
+  text-align: center;
+
+  background-color: #e5e5e5;
+}
+
+.description-main .btn {
+  float: left;
+  width: 42px;
+  padding: 10px 15px;
+
+  text-align: center;
+}
+.description-additional {
+  float: left;
+}
+
+.description-additional h3 {
+  margin:0;
+  margin-bottom: 30px;
+}
+
+.description-additional ul {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+.description-additional li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.description-additional li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  top: 8px;
+
+  background-color: #000000;
+
+  transform: rotate(45deg);
 }
